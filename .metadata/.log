@@ -1,0 +1,148 @@
+!SESSION 2016-06-27 14:33:34.908 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/liyang/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/liyang/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2016-06-27 14:34:18.078
+!MESSAGE java.nio.channels.OverlappingFileLockException
+!STACK 0
+java.nio.channels.OverlappingFileLockException
+	at sun.nio.ch.SharedFileLockTable.checkList(FileLockTable.java:255)
+	at sun.nio.ch.SharedFileLockTable.add(FileLockTable.java:152)
+	at sun.nio.ch.FileChannelImpl.tryLock(FileChannelImpl.java:1075)
+	at java.nio.channels.FileChannel.tryLock(FileChannel.java:1155)
+	at org.eclipse.oomph.base.util.BaseUtil.execute(BaseUtil.java:273)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.associate(SetupContext.java:362)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.createSelf(SetupContext.java:239)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:598)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$4(SetupUIPlugin.java:350)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:247)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.jobs 4 2 2016-06-27 14:35:02.441
+!MESSAGE An internal error occurred during: "Task List Indexer".
+!STACK 0
+java.nio.channels.OverlappingFileLockException
+	at sun.nio.ch.SharedFileLockTable.checkList(FileLockTable.java:255)
+	at sun.nio.ch.SharedFileLockTable.add(FileLockTable.java:152)
+	at sun.nio.ch.FileChannelImpl.tryLock(FileChannelImpl.java:1075)
+	at java.nio.channels.FileChannel.tryLock(FileChannel.java:1155)
+	at org.apache.lucene.store.NativeFSLock.obtain(NativeFSLockFactory.java:216)
+	at org.apache.lucene.store.Lock.obtain(Lock.java:72)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:1108)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:936)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.createIndexWriter(TaskListIndex.java:1272)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.rebuildIndexCompletely(TaskListIndex.java:1221)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.maintainIndex(TaskListIndex.java:1089)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex.access$0(TaskListIndex.java:1070)
+	at org.eclipse.mylyn.internal.tasks.index.core.TaskListIndex$MaintainIndexJob.run(TaskListIndex.java:173)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2016-07-02 11:34:04.551 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/liyang/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/liyang/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2016-07-02 11:34:36.709
+!MESSAGE java.nio.channels.OverlappingFileLockException
+!STACK 0
+java.nio.channels.OverlappingFileLockException
+	at sun.nio.ch.SharedFileLockTable.checkList(FileLockTable.java:255)
+	at sun.nio.ch.SharedFileLockTable.add(FileLockTable.java:152)
+	at sun.nio.ch.FileChannelImpl.tryLock(FileChannelImpl.java:1075)
+	at java.nio.channels.FileChannel.tryLock(FileChannel.java:1155)
+	at org.eclipse.oomph.base.util.BaseUtil.execute(BaseUtil.java:273)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.associate(SetupContext.java:362)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.createSelf(SetupContext.java:239)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:598)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$4(SetupUIPlugin.java:350)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:247)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2016-07-02 11:35:58.546 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product -keyring /Users/liyang/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -data /Volumes/Transcend/java/workspace/mhs -product org.eclipse.epp.package.jee.product -keyring /Users/liyang/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2016-07-02 11:36:17.915
+!MESSAGE java.nio.channels.OverlappingFileLockException
+!STACK 0
+java.nio.channels.OverlappingFileLockException
+	at sun.nio.ch.SharedFileLockTable.checkList(FileLockTable.java:255)
+	at sun.nio.ch.SharedFileLockTable.add(FileLockTable.java:152)
+	at sun.nio.ch.FileChannelImpl.tryLock(FileChannelImpl.java:1075)
+	at java.nio.channels.FileChannel.tryLock(FileChannel.java:1155)
+	at org.eclipse.oomph.base.util.BaseUtil.execute(BaseUtil.java:273)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.associate(SetupContext.java:362)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.createSelf(SetupContext.java:239)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:598)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$4(SetupUIPlugin.java:350)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:247)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2016-07-13 20:57:20.231 -----------------------------------------------
+eclipse.buildId=4.5.2.M20160212-1500
+java.version=1.8.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/liyang/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/liyang/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 16 2016-07-13 20:57:58.530
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: Read timed out. ; version: 1.100.0.v20160217-0435
+!STACK 0
+org.apache.http.conn.ConnectTimeoutException: Connect to dev.eclipse.org:443 [dev.eclipse.org/198.41.30.200] failed: Read timed out
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:134)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.request(IO.java:205)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:68)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:101)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:290)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:259)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:125)
+	... 16 more
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2016-07-13 20:57:58.809
+!MESSAGE java.nio.channels.OverlappingFileLockException
+!STACK 0
+java.nio.channels.OverlappingFileLockException
+	at sun.nio.ch.SharedFileLockTable.checkList(FileLockTable.java:255)
+	at sun.nio.ch.SharedFileLockTable.add(FileLockTable.java:152)
+	at sun.nio.ch.FileChannelImpl.tryLock(FileChannelImpl.java:1075)
+	at java.nio.channels.FileChannel.tryLock(FileChannel.java:1155)
+	at org.eclipse.oomph.base.util.BaseUtil.execute(BaseUtil.java:273)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.associate(SetupContext.java:362)
+	at org.eclipse.oomph.setup.internal.core.SetupContext.createSelf(SetupContext.java:239)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:598)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$4(SetupUIPlugin.java:350)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:247)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
