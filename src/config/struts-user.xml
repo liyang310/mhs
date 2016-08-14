@@ -31,13 +31,17 @@
 	<package name="loginAction" namespace="/" extends="abstract_struts">
 	
 		<action name="login" class="loginAction">
-			<result name="success" type="redirect">index</result>
+			<result name="success" type="redirect">listUser</result>
 			<result name="fail">/fail.jsp</result>
 		</action>
 
 		<!-- 该action只负责跳转，用struts提供的ActionSupport -->
 		<action name="index" class="indexAction">
 			<result name="success">jsp/index/index.jsp</result>
+		</action>
+		<!-- 该action只负责跳转，用struts提供的ActionSupport -->
+		<action name="decorator" class="indexAction">
+			<result name="success">decorator.jsp</result>
 		</action>
 	</package>
 

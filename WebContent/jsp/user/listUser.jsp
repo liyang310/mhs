@@ -3,13 +3,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="static/bootstrap2.3.2/css/bootstrap.min.css" rel="stylesheet" />
-    <title></title>
-    <link href="static/styles/Common.css" rel="stylesheet" />
-    <link href="static/styles/Index2.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container-fluid">
@@ -77,8 +70,6 @@
         </div>
     </div>
 
-    <script src="static/scripts/jquery-1.9.1.min.js"></script>
-    <script src="static/bootstrap2.3.2/js/bootstrap.min.js"></script>
     <script src="static/layer-v2.3/layer/layer.js"></script>
     <script src="static/laypage-v1.3/laypage/laypage.js"></script>
     <script src="static/scripts/Index2.js"></script>

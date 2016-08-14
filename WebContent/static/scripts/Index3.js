@@ -42,8 +42,8 @@ function load(curr) {
     })
 }
 
-function openadd() {
-    $("#myModalLabel").text("添加成绩");
+function add() {
+    $("#myModalLabel").text("new company");
     $("#userName").attr("readonly", false);
     $("input").val("");
     $("#addModal").modal("show");
@@ -52,7 +52,7 @@ function openadd() {
 }
 
 
-function add() {
+function save() {
     if ($("#userName").val() == "") {
         layer.tips('不能为空', '#userName');
         return;
@@ -92,7 +92,7 @@ function add() {
 }
 
 
-function openedt(userName) {
+function edit(userName) {
     $.ajax({
         url: "../Json/Index.aspx",
         timeout: 300000,
@@ -154,22 +154,38 @@ function edt() {
 }
 
 
-function del(userName) {
+function del(action) {
     //询问框
     layer.confirm('您确定要删除？', {
         btn: ['确定', '取消'] //按钮
     }, function () {
-        $.ajax({
-            url: "../Json/Index.aspx",
-            timeout: 300000,
-            dataType: "json",
-            type: "post",
-            data: { "flag": "del", "userName": userName },
-            success: function (data) {
-                layer.alert(data.msg);
-                load(curr);
-            }
-        })
+    	var checklist = document.getElementsByName ("selected");
+    	var delIds = [];
+    	for(var i=0;i<checklist.length;i++)
+		{
+   			if(checklist[i].checked == 1){
+   				delIds.push(checklist[i].value);
+   			}
+		}
+    	if(delIds.length==0){
+    		alert("请至少选择一项！");
+    		location.reload();
+    		return;
+    	}
+    		
+    	var url = action+"?Ids="+delIds;
+    	window.location.href=url;
+//        $.ajax({
+//            url: "../Json/Index.aspx",
+//            timeout: 300000,
+//            dataType: "json",
+//            type: "post",
+//            data: { "flag": "del", "userName": userName },
+//            success: function (data) {
+//                layer.alert(data.msg);
+//                load(curr);
+//            }
+//        })
     }, function () {
         //  layer.close();
     });

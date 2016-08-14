@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<package name="companyActions" namespace="/" extends="abstract_struts">
+		<action name="addCompany" class="companyAction" method="addCompany">
+			<result name="success" type="redirect">listCompanyByPage</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="deleteCompanyById" class="companyAction" method="deleteCompanyById">
+			<result name="success" type="redirect">listCompanyByPage</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="getCompanyById" class="companyAction" method="getCompanyById">
+		</action>
+		<action name="modifyCompany" class="companyAction" method="modifyCompany">
+			<result name="success" type="redirect">listCompanyByPage</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="listCompanyByPage" class="companyAction" method="listCompanyByPage">
+			<result name="success">jsp/fleetRegister/listCompany.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+	</package>
+	<package name="operatorActions" namespace="/" extends="abstract_struts">
+		<action name="addOperator" class="operatorAction" method="addOperator">
+			<result name="success" type="redirect">listOperatorByPage</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="deleteOperatorById" class="operatorAction" method="deleteOperatorById">
+			<result name="success" type="redirect">listOperatorByPage</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="getOperatorById" class="operatorAction" method="getOperatorById">
+		</action>
+		<action name="modifyOperator" class="operatorAction" method="modifyOperator">
+			<result name="success" type="redirect">listOperatorByPage</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="listOperatorByPage" class="operatorAction" method="listOperatorByPage">
+			<result name="success">jsp/fleetRegister/listOperator.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+	</package>
+	<package name="groupActions" namespace="/" extends="abstract_struts">
+		<action name="addGroup" class="groupAction" method="addGroup">
+			<result name="success" type="redirect">listGroupByPage</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="deleteGroupById" class="groupAction" method="deleteGroupById">
+			<result name="success" type="redirect">listGroupByPage</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="getGroupById" class="groupAction" method="getGroupById">
+		</action>
+		<action name="modifyGroup" class="groupAction" method="modifyGroup">
+			<result name="success" type="redirect">listGroupByPage</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="listGroupByPage" class="groupAction" method="listGroupByPage">
+			<result name="success">jsp/fleetRegister/listGroup.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+	</package>
+	<package name="vesselActions" namespace="/" extends="abstract_struts">
+		<action name="addVessel" class="vesselAction" method="addVessel">
+			<result name="success" type="redirect">listVesselByPage</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="deleteVesselById" class="vesselAction" method="deleteVesselById">
+			<result name="success" type="redirect">listVesselByPage</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="getVesselById" class="vesselAction" method="getVesselById">
+		</action>
+		<action name="modifyVessel" class="vesselAction" method="modifyVessel">
+			<result name="success" type="redirect">listVesselByPage</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+		<action name="listVesselByPage" class="vesselAction" method="listVesselByPage">
+			<result name="success">jsp/fleetRegister/listVessel.jsp</result>
+			<result name="fail">/fail.jsp</result>
+		</action>
+	</package>
+</struts>

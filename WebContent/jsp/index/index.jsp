@@ -80,13 +80,39 @@
 
                             </div>
                         </div>
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                <img class="left-icon" src="static/images/32/5026_settings.png" /><span class="left-title">Fleet Register</span>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse in">
+                            <div class="accordion-inner">
+                                <img class="left-icon-child" src="static/images/32/4962_sitemap.png" /><span class="left-body"><a href="listCompanyByPage"> company manage</a></span>
+                            </div>
+                            <div class="accordion-inner">
+                                <img class="left-icon-child" src="static/images/32/4957_customers.png" /><span class="left-body"> 角色管理</span>
+
+                            </div>
+                            <div class="accordion-inner">
+                                <img class="left-icon-child" src="static/images/32/4992_user.png" /><span class="left-body"> 用户管理</span>
+
+                            </div>
+                            <div class="accordion-inner">
+                                <img class="left-icon-child" src="static/images/32/612.png" /><span class="left-body"> 单位管理</span>
+
+                            </div>
+                            <div class="accordion-inner">
+                                <img class="left-icon-child" src="static/images/32/8.png" /><span class="left-body"> 字典管理</span>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
             <div class="span10 content-right">
-                <iframe src="listUser" class="iframe"></iframe>
+                <iframe id="right" src="listUser" class="iframe"></iframe>
             </div>
         </div>
     </div>
